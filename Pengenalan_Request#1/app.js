@@ -6,6 +6,11 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
+app.get('/', (req, res) => {
+    res.send('Hello Sofa 1!')
+})
+
+
 // Untuk respon format JSON
 app.get('/about', (req, res) => {
     // res.send('Ini adalah halaman about')
