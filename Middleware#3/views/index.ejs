@@ -1,0 +1,21 @@
+<h1>Halaman Home Menggunakan Express View Engine</h1>
+
+<div class="card" style="width: 18rem;">
+    <div class="card-header">
+        <p>Daftar User :</p>
+    </div>
+    <% if (users.length < 1) { %>
+
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Daftar Users Kosong</li>
+    </ul>
+
+    <% } else { %>
+    <% users.forEach(row => { %>
+    <ul class="list-group list-group-flush m-3">
+        <li class="list-group-item">Nama : <%= row.user %></li>
+        <li class="list-group-item"> Umur : <%= row.umur %></li>
+    </ul>
+    <% }) %>
+    <% } %>
+</div>
